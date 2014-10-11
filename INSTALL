@@ -1,0 +1,17 @@
+mkdir build  
+cd build/  
+cmake  -DCMAKE_INSTALL_PREFIX=/opt/openfetion/AnZhuang/ -DCMAKE_BUILD_TYPE=release ..  
+make   
+make install
+
+libxml2-dev (必须，libofetion)
+libssl-dev (必须，libofetion)
+libsqlite3-dev (必须，libofetion)
+libgtk2.0-dev (必须，openfetion)
+intltool (必须，openfetion)
+libnotify-dev (必须，openfetion)
+libgstreamer0.10-dev (必须，openfetion)
+libnm-glib-dev (必须，openfetion)   ---->networkmanager
+libxss-dev (必须，openfetion)   ----->xscreensaver
+
+pkg-config gettext libgdk-pixbuf2.0-dev libglib2.0-dev libcurl4-openssl-devel libpurple-dev libofetion
